@@ -382,7 +382,8 @@
       <!-- 로비:엘리베이터:탑승 --> 
     <div id="elevator" class="hidden">
     <p><span style="font-weight: bold;">[엘리베이터]</span><br><br>1층부터 4층까지, 원하는 층으로 이동할 수 있다.</p>
-    <button onclick="goToWithSound('3rdfloor','zzapelevator.mp3')">3층</button><br>
+    <button onclick="goToWithSound('4thfloor','zzapelevator.mp3')">4층</button><br>
+      <button onclick="goToWithSound('3rdfloor','zzapelevator.mp3')">3층</button><br>
       <button onclick="goToWithSound('2ndfloor','zzapelevator.mp3')">2층</button><br>
         <button onclick="goToWithSound('inside','zzapelevator.mp3')">1층</button><br>
  </div>     
@@ -447,25 +448,25 @@
     <div id="evi15" class="hidden">
     <p><span style="font-weight: bold;">[회의실]</span><br><br>세미나 등을 진행할 수 있는 회의실.<br>문을 열면 내부가 어수선하다. 한 차례 몸싸움이라도 있었던 것처럼...<br>회의실 <span style="color: #202e70;">문</span>과 <span style="color: #202e70;">책상</span>에 특이한 점이 있다.</p>
     <button onclick="goTo('pcdesk')">문</button>
-    <button onclick="goTo('evi16')">바닥</button><br>
+    <button onclick="goTo('evi16')">책상</button><br>
     <button class="nav-button" onclick="goTo('2ndfloor')">나가기</button>
   </div>
 
     <!-- 회의실 : 문 --> 
     <div id="pcdesk" class="hidden">
     <p><span style="font-weight: bold;">[회의실]/[문]</span><br><br>문 근처 바닥에 핏자국이 남아 있다.</p>
-    <button class="nav-button" onclick="goTo('office')">나가기</button>
+    <button class="nav-button" onclick="goTo('evi15')">나가기</button>
   </div>
 
       <!-- 회의실 : 책상 --> 
     <div id="evi16" class="hidden">
     <p><span style="font-weight: bold;">[회의실]/[책상]</span><br><br>세토 아이비가 이 근처에 쓰러져 있었지...<br>모서리에 무언가가 세게 부딪힌 흔적이 있고, 책상 아래 바닥과 모서리에 소량의 혈흔이 남아 있다.</p>
-    <button class="nav-button" onclick="goTo('office')">나가기</button>
+    <button class="nav-button" onclick="goTo('evi15')">나가기</button>
   </div>
   
     <!-- 3층 --> 
     <div id="3rdfloor" class="hidden">
-    <p><span style="font-weight: bold;">[3층]</span><br><br>3층은 방 여러 개로 구성된 문화 시설이다.<br>반짝반짝한 문패가 붙은 문들이 늘어서 있지만 더는 마음이 들뜨지 않는다.<br>창문 너머로는 섬의 모습이 내려다보인다.<br>저 멀리 메모리얼 파크에 묘비 세 개가 늘어서 있다... 곧 하나가 더해지겠지.</p>
+    <p><span style="font-weight: bold;">[3층]</span><br><br>3층은 방 여러 개로 구성된 문화 시설이다.<br>반짝반짝한 문패가 붙은 문들이 늘어서 있지만 더는 마음이 들뜨지 않는다.<br>창문 너머로는 섬의 모습이 내려다보인다.<br>저 멀리 메모리얼 파크에 묘비 다섯 개가 늘어서 있다... 이번에는 몇 개가 더해지게 될까?</p>
     <button onclick="goTo('elevator')">엘리베이터</button><br>
     <button onclick="goTo('music')">음악실</button>
     <button onclick="goTo('cinema')">영화관</button>
@@ -501,7 +502,7 @@
 
       <!-- 공연장 --> 
     <div id="stage" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]</span><br><br>원형 극장의 형태를 빌려온 공연장은 텅 비어 있고,. 조명이 꺼져 어두컴컴하다.</p>
+    <p><span style="font-weight: bold;">[공연장]</span><br><br>원형 극장의 형태를 빌려온 공연장은 텅 비어 있고, 조명이 꺼져 어두컴컴하다.</p>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
   </div>
   
