@@ -506,79 +506,49 @@
   </div>
   
       <!-- !!폴라리스 시체 --> 
-    <div id="polasiche" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    가슴팍에 무언가가 꽂힌 폴라리스 래피드의 시체.<br>스피커에 기댄 상태로 앉아 있다.</p>
-    <button onclick="goTo('evi1')">전체적인 상태</button><br>
-    <button onclick="goTo('evi3')">얼굴을 살펴본다</button><br>
-    <button onclick="goTo('evi4')">상체를 살펴본다</button><br>
+    <div id="evi5" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
+    포멜하우트의 시체.<br>상반신, 손, 무릎... 피부 전체적으로 화상 자국이 있다. </p>
+    <button onclick="goTo('face')">얼굴을 살펴본다</button><br>
+    <button onclick="goTo('evi6')">손과 발을 살펴본다</button><br>
     <button onclick="goTo('cut')">상처 부근을 살펴본다</button><br>
     <button onclick="goTo('foot')">하체를 살펴본다</button><br>
     <button class="nav-button" onclick="goTo('mudae')">나가기</button>
   </div>
 
       <!-- !!폴라리스 시체 --> 
-    <div id="evi1" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    늘 감고 다니는 붕대나 밴드가 붙어 있지만, 새로운 상처는 보이지 않는다.</p>
-   <button id="e1" onclick="ev2('e1')">자세히 본다</button><br>
+    <div id="face" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
+    두 눈은 감기지 않은 채다. 입은 테이프로 막혀 있다.</p>
    <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
-    <p id="evi2-result"></p>
   </div>
 
       <!-- !!폴라리스 시체 --> 
-    <div id="evif" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    꼼꼼히 살펴본 결과 가슴과 머리의 상처를 제외한 다른 상처는 전혀 없는 것 같다.</p>
+    <div id="evi6" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
+양손과 양발이 밧줄로 단단히 고정되어 묶여 있다.<br>강하게 묶여 있는 탓에 어지간해서는 풀기 어려울 것 같다.<br>
+밧줄에서는 살짝 탄 향이 난다.</p>
+    <button id="tkdcj" onclick="ev7('tkdcj')">잘 관찰해 본다</button><br>
+  <button id="thswkrnr" onclick="ev8('thswkrnr')">밧줄을 살펴본다</button><br>
+    <p id="evi7-result"></p>
+    <p id="evi8-result"></p>
    <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
   </div>
 
         <!-- !!폴라리스 시체 --> 
-    <div id="evi3" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    이마 위쪽에서도 피가 흐른 흔적이 있다. 머리도 공격당한 걸까?</p>
-   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
+    <div id="evi7" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
+밧줄은 무척 단단히 묶여 있어, 초보자의 솜씨라고는 생각할 수 없다.<br>어느 정도 근력이 있고, 로프를 사용한 경험이 있는 사람이 묶은 것 아닐까?</p>
+   <button class="nav-button" onclick="goTo('evi6')">나가기</button>
+  </div>
+
+          <!-- !!폴라리스 시체 --> 
+    <div id="evi8" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
+옷과 달리 밧줄은 피부에 달라붙지 않은 상태다.</p>
+   <button class="nav-button" onclick="goTo('evi6')">나가기</button>
   </div>
   
-         <!-- !!폴라리스 시체 --> 
-    <div id="evi4" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    머리카락 끝과 어깨 부근에도 혈흔이 묻어 있다.<br>공격당할 때 피가 튀었거나... 지혈하다가 묻은 걸까?</p>
-   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
-  </div>
-
-       <!-- !!폴라리스 시체 --> 
-    <div id="cut" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    가슴팍에 있는 상처. 깊은 상처에서 흐른 핏자국이 선명하다.</p>
-   <button id="tkdcj" onclick="ev5('tkdcj')">심장 부근을 살핀다</button><br>
-  <button id="thswkrnr" onclick="ev6('thswkrnr')">남아 있는 흔적이 없는지 살핀다</button><br>
-    <p id="evi5-result"></p>
-    <p id="evi6-result"></p>
-   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
-  </div>
-
-    <!-- !!폴라리스 시체 --> 
-    <div id="evi5" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    심장 부근에 렌치가 꽂혀 있다.<br>한쪽은 드라이버, 한쪽은 육각형 모양으로 된 형태로 지금은 드라이버 쪽이 튀어나와 있다.</p>
-   <button class="nav-button" onclick="goTo('cut')">나가기</button>
-  </div>
-
-    <!-- !!폴라리스 시체 --> 
-    <div id="evi6" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    시체에 꽂힌 것은 렌치로, 손자국이 남아 있다.<br>크기를 보면 폴라리스 본인의 것으로 보이고, 다른 자국은 보이지 않는다.</p>
-   <button class="nav-button" onclick="goTo('cut')">나가기</button>
-  </div>
-
-      <!-- !!폴라리스 시체 --> 
-    <div id="foot" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
-    신발 한쪽이 벗겨져 있다.</p>
-   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
-  </div>
-
         <!-- !!시체 주변 --> 
     <div id="around" class="hidden">
     <p><span style="font-weight: bold;">[공연장]<br>[시체 주변]</span><br><br>
