@@ -511,8 +511,7 @@
     포멜하우트의 시체.<br>상반신, 손, 무릎... 피부 전체적으로 화상 자국이 있다. </p>
     <button onclick="goTo('face')">얼굴을 살펴본다</button><br>
     <button onclick="goTo('evi6')">손과 발을 살펴본다</button><br>
-    <button onclick="goTo('cut')">상처 부근을 살펴본다</button><br>
-    <button onclick="goTo('foot')">하체를 살펴본다</button><br>
+    <button onclick="goTo('clo')">옷을 살펴본다</button><br>
     <button class="nav-button" onclick="goTo('mudae')">나가기</button>
   </div>
 
@@ -548,62 +547,15 @@
 옷과 달리 밧줄은 피부에 달라붙지 않은 상태다.</p>
    <button class="nav-button" onclick="goTo('evi6')">나가기</button>
   </div>
-  
-        <!-- !!시체 주변 --> 
-    <div id="around" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[시체 주변]</span><br><br>
-    폴라리스는 <span style="color: #3f40d3;">스피커</span>에 기댄 상태로 앉아 있고, 주변에 <span style="color: #3f40d3;">수건</span> 하나가 떨어져 있다.<br><span style="color: #3f40d3;">바닥</span>에도 무언가 떨어져 있는 듯하다.</p>
-       <button onclick="goTo('speaker')">스피커</button>
-    <button onclick="goTo('towel')">수건</button>
-    <button onclick="goTo('qkekr')">바닥</button><br>
-       <button class="nav-button" onclick="goTo('mudae')">나가기</button>   
-  </div>
 
-        <!-- !!주변 --> 
-    <div id="speaker" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[시체 주변]</span><br><br>
-    폴라리스가 기대고 있던 스피커. 피가 약간 튀어 있는 것 외에 이상은 없다.</p>
-   <button id="mvspk" onclick="ev7('mvspk')">스피커를 움직여 본다</button><br>
-    <p id="evi7-result"></p>
-   <button class="nav-button" onclick="goTo('around')">나가기</button>
+          <!-- !!폴라리스 시체 --> 
+    <div id="evi9" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
+옷가지가 피부에 붙어 녹아 있고, 상반신의 심장 부근은 검게 그을려 있다.</p>
+   <button class="nav-button" onclick="goTo('evi6')">나가기</button>
   </div>
   
-    <div id="evi7" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[시체 주변]</span><br><br>
-  스피커를 살짝 옮기자 가려져 있던 벽이나 바닥에 긁히고 패인 자국이 남아 있는 게 보인다. 새로 생긴 흔적 같다.</p>
-   <button class="nav-button" onclick="goTo('around')">나가기</button>
-  </div>
-  
-        <!-- !!주변 --> 
-    <div id="towel" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[시체 주변]</span><br><br>
-    피 묻은 수건이 바닥에 떨어져 있다. 지혈하려던 걸까?</p>
-   <button class="nav-button" onclick="goTo('around')">나가기</button>
-  </div>
-
-    <!-- !!주변 --> 
-    <div id="qkekr" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[시체 주변]</span><br><br>
-    바이알 약병 하나가 굴러다닌다.</p>
-     <button id="antmsdir" onclick="ev8('antmsdir')">무슨 약인지 확인한다</button><br>
-  <button id="dirqud" onclick="ev9('dirqud')">약병을 자세히 본다</button><br>
-    <p id="evi8-result"></p>
-    <p id="evi9-result"></p>
-   <button class="nav-button" onclick="goTo('around')">나가기</button>
-  </div>
-
-      <div id="evi8" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[시체 주변]</span><br><br>
-  [약품명: NX-021] 시판 제품이 아니다.</p>
-   <button class="nav-button" onclick="goTo('qkekr')">나가기</button>
-  </div>
-
-      <div id="evi9" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]<br>[시체 주변]</span><br><br>
-  약병의 고무마개에는 주삿바늘 자국이 없다.</p>
-   <button class="nav-button" onclick="goTo('qkekr')">나가기</button>
-  </div>
-
+ 
       <!-- 도서관 --> 
     <div id="library" class="hidden">
     <p><span style="font-weight: bold;">[도서관]</span><br><br>장서의 종류별로 정리된 책장이 아무도 없는 숲처럼 펼쳐진다.<br>어디로 가야 할지 길을 잃어버릴 것만 같다.</p>
@@ -728,20 +680,54 @@
     <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
  </div> 
 
+  <!-- 샤워실 --> 
+    <div id="shower" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]</span><br><br>
+비상용 조명만이 켜진 샤워실.<br>내부에 들어서면 공기 중으로 희미한 알코올 향이 난다. 샤워 부스 바닥의 물에 알코올이 섞여 있는 것 같다.<br><span style="color: #3f40d3;">세면대</span>와 <span style="color: #3f40d3;">화장대</span>가 보이고, 안쪽의 <span style="color: #3f40d3;">샤워 부스</span> 중 하나에 <span style="color: #3f40d3;">포멜하우트의 시체</span>가 있다.</p>
+    <button onclick="goTo('shower1')">세면대</button>
+    <button onclick="goTo('shower2')">화장대</button><br>
+    <button onclick="goTo('shower3')">샤워 부스</button><br>    
+    <button onclick="goTo('evi5')">포멜하우트의 시체</button><br>
+    <button onclick="goTo('evi10')">알코올 냄새에 대해 생각해 본다</button><br>
+    <p id="evi10-result"></p>
+    <button class="nav-button" onclick="goTo('training')">나가기</button>
+    </div>   
 
+   <!-- 샤워실 --> 
+<div id="evi10" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]</span><br><br>
+인화성 물질인 알코올 중으로 스파크가 발생하면 감전과 폭발의 위험이 있다는 것이 생각난다.</p>
+    <button class="nav-button" onclick="goTo('shower')">나가기</button>
+ </div> 
 
+   <!-- 샤워부스 --> 
+<div id="shower3" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[샤워 부스]</span><br><br>
+배수구가 얇은 판으로 막혀 있다.<br>그 때문인지, 샤워기에서 흘러나온 물이 바닥에 차올라 있다.<br>걸을 때마다 찰박거리는 소리가 난다.</p>
+<button onclick="goTo('evi11')">바닥을 본다</button><br>
+<button class="nav-button" onclick="goTo('shower')">나가기</button>
+ </div> 
 
+   <!-- 샤워부스 --> 
+<div id="evi11" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[샤워 부스]</span><br><br>
+피복이 벗겨진 채 손상된 전선이 바닥에 늘어져 있다.</p>
+<button class="nav-button" onclick="goTo('shower3')">나가기</button>
+ </div> 
+  
+    <!-- 세면대 --> 
+    <div id="shower1" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[세면대]</span><br><br>
+세면대 위에 '소독용 알코올' 병 여러 개가 사용된 채 굴러다니고 있다.</p>
+    <button class="nav-button" onclick="goTo('shower')">나가기</button>
+    </div>   
 
-
-
-
-
-
-
-
-
-
-
+    <!-- 화장대 --> 
+    <div id="shower2" class="hidden">
+    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[화장대]</span><br><br>
+화장대에 부착된 콘센트가 눈에 들어온다.<br>드라이기, 고데기, 손 건조기 등의 콘센트가 다량 꽂혀 있다.<br>전선 중 몇 개는 트레이닝 룸의 운동기구와도 연결되어 있다.<br>지금은 정전 상태지만, 전류가 상당했을 것 같다...</p>
+    <button class="nav-button" onclick="goTo('shower')">나가기</button>
+    </div>   
   
    <!-- 감시카메라룸 --> 
 <div id="strange" class="hidden">
@@ -1122,6 +1108,9 @@ function goTo(page) {
       if (['evi14'].includes(page)) {
     currentUser.evid14 = true;
   }
+        if (['evi45'].includes(page)) {
+    currentUser.evid45 = true;
+  }
       if (['evi15'].includes(page)) {
     currentUser.evid15 = true;
   }
@@ -1254,83 +1243,30 @@ function ev45(buttonId) {
     result.innerText = "생각해 봐도 떠오르는 것이 없다.";
   }
 }
-    
-//여기는 전에 쓰던 함수 (포맷 참고용으로 남겨둠, 나중에 지울 것)
-function ev5(buttonId) {
-  if (currentUser.POW >= 3) {
-    goTo('evi5');
-  } else {
-    const result = document.getElementById('evi5-result');
-    result.innerText = "자세히 보기에는 지나치게 참혹한 모습이다.";
-  }
-}
-function ev6(buttonId) {
-  if (currentUser.OBS >= 4) {
-    goTo('evi6');
-  } else {
-    const result = document.getElementById('evi6-result');
-    result.innerText = "자세히 살펴봤지만 눈에 띄는 것은 없다.";
-  }
-}
 function ev7(buttonId) {
-  if (currentUser.STR >= 3) {
+  if (currentUser.INT >= 4) {
     goTo('evi7');
   } else {
     const result = document.getElementById('evi7-result');
-    result.innerText = "스피커는 꽤 무겁다. 마음대로 움직일 수 없을 것 같다.";
+    result.innerText = "딱히 떠오르는 것은 없다.";
   }
 }
 function ev8(buttonId) {
-  if (currentUser.INT >= 5) {
+  if (currentUser.OBS >= 5 && currentUser.INT >= 4 && currentUser.STR >= 4) {
     goTo('evi8');
   } else {
     const result = document.getElementById('evi8-result');
-    result.innerText = "무슨 약인지 짐작조차 가지 않는다.";
+    result.innerText = "눈에 띄는 것은 없다.";
   }
 }
-function ev9(buttonId) {
-  if (currentUser.OBS >= 5) {
-    goTo('evi9');
-  } else {
-    const result = document.getElementById('evi9-result');
-    result.innerText = "자세히 확인했지만 짚이는 것이 없다.";
-  }
-}
-
-function ev11(buttonId) {
+function ev10(buttonId) {
   if (currentUser.INT >= 4) {
-    goTo('evi11');
+    goTo('evi10');
   } else {
-    const result = document.getElementById('evi11-result');
-    result.innerText = "자세히 들여다보았지만 더 생각나는 것은 없다.";
+    const result = document.getElementById('evi10-result');
+    result.innerText = "딱히 떠오르는 것은 없다.";
   }
-}
-function ev12(buttonId) {
-  if (currentUser.med === true) {
-    goTo('evi12');
-  } else {
-    const result = document.getElementById('evi12-result');
-    result.innerText = "본 기억이 없는 약이다.";
-  }
-}
-function ev14(buttonId) {
-  if (currentUser.LUC >= 4) {
-    goTo('evi14');
-  } else {
-    const result = document.getElementById('evi14-result');
-    result.innerText = "워낙 알아보기 힘든 글씨인 탓에 내용을 더 알아내는 것은 힘들 것 같다.";
-  }
-}
-function ev15(buttonId) {
-  if (currentUser.id === "edit" || currentUser.id === "WEIHNACHT") {
-    goTo('evi15');
-  } else {
-    const result = document.getElementById('evi15-result');
-    result.innerText = "딱히 떠오르는 것은 없다...";
-  }
-}
-
-    
+}  
 //★★★★★퀴즈★★★★★
 function checkSecretCode() {
   const input = document.getElementById('secret-code-input').value;
@@ -1370,52 +1306,58 @@ function loadFinalReport() {
 
 
   if (currentUser.evid1 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">잘 정돈된 시체의 상태</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">레스토랑의 물컵 두 잔</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid2 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">시체의 가슴팍과 머리의 상처를 제외하면 다른 상처는 전무함</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">도구함에서 사라진 밧줄과 테이프</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid3 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">폴라리스의 이마 위쪽에 피가 흐른 흔적</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">버려진 '졸피뎀'</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid4 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">폴라리스의 머리카락 끝과 어깨 부근에 묻은 혈흔</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">사용된 알코올 램프</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid5 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">폴라리스의 심장 부분에 꽂힌 렌치</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">온몸의 화상 자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
     if (currentUser.evid6 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">렌치에 남은 폴라리스의 손자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.evidnfl === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">사라진 헌화용 국화</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">양손과 양발을 묶은 밧줄</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid7 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">스피커 뒤쪽의 벽에 생긴 흠집</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">밧줄은 로프 사용에 능숙하고 근력이 있는 사람이 묶었을 것으로 추정</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid8 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">공연장 바닥의 약품 NX-021</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">옷과 달리 밧줄은 피부에 달라붙어 있지 않음</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid9 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">공연장 바닥에 있던 약품의 고무마개에는 주삿바늘 흔적이 없음</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">피부에 붙어 녹아 있는 의류, 심장의 그을린 자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid10 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">폴라리스의 방, 메모지를 한 장 뜯어 쓴 흔적</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">샤워실의 알코올로 인한 감전 및 폭발의 위험</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid11 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">사라진 베이스 기타</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">샤워실 바닥의 손상된 전선</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid12 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">약품 보관실의 쓰레기통에 버려진 약병</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">어긋난 운동기구</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
     if (currentUser.evid13 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">라운지 바닥의 쪽지 「…비밀… …공연장… 1시 30분…」 </div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">트레이닝 룸 거울의 손자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid14 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">라운지 바닥의 쪽지 「…리스 …비」 </div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">벽을 짚으며 걸어간 자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
-    if (currentUser.evid15 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">라운지 바닥의 쪽지는 평소에 쓰지 않는 손으로 작성됨</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    if (currentUser.evid45 === true) {
+    lines.push({ html: `<div style="color: black; font-style: italic;">신장이 꽤 큰 사람의 손자국으로 추정</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+  }
+      if (currentUser.evid15 === true) {
+    lines.push({ html: `<div style="color: black; font-style: italic;">어수선한 회의실</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+  }
+      if (currentUser.evid16 === true) {
+    lines.push({ html: `<div style="color: black; font-style: italic;">회의실의 핏자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+  }
+        if (currentUser.evid17 === true) {
+    lines.push({ html: `<div style="color: black; font-style: italic;">살짝 헐거워진 세토의 개인실 문 손잡이</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   lines.push({ html: `<div style="color: #888">별도의 제출은 필요로 하지 않습니다.</div>`, align: 'right', lineStyle: 'color: #888;' });
 
