@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>Chapter 2-DEADLY LIFE</title>
+  <title>Chapter 3-DEADLY LIFE</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"/>
   <style>
 
@@ -333,15 +333,14 @@
     <div id="counter" class="hidden">
     <p><span style="font-weight: bold;">[로비]<br>[카운터]</span><br><br>보통이라면 직원이 서 있어야 할 카운터 너머에는 아무도 없다.<br>조명이 몇 개 꺼져 어둑하고, 공증인의 목소리조차 들리지 않는다.<br>이번 사건을 조사하고 나면, 또 이 아래에 있는 재판정으로...</p>
     <button class="nav-button" onclick="goTo('lobby')">나가기</button>
- </div>
+  </div>
 
     <!-- 로비:라운지 --> 
     <div id="waitingspace" class="hidden">
-    <p><span style="font-weight: bold;">[로비]<br>[라운지]</span><br><br>카운터 앞쪽에 배치된 라운지. 잠시 쉬어가는 용도의 소파가 배치되어 있지만 지금은 적당한 때가 아니다.<br>라운지 중앙에는 작은 <span style="color: #202e70;">책꽂이</span>가 설치되어 있다.<br>대리석 <span style="color: #202e70;">바닥</span> 위를 걷는 소리가 음산하게 울린다...</p>
+    <p><span style="font-weight: bold;">[로비]<br>[라운지]</span><br><br>카운터 앞쪽에 배치된 라운지. 잠시 쉬어가는 용도의 소파가 배치되어 있지만 지금은 적당한 때가 아니다.<br>라운지 중앙에는 작은 <span style="color: #202e70;">책꽂이</span>가 설치되어 있다.</p>
     <button onclick="goTo('bookshelf')">책꽂이</button><br>
-    <button onclick="goTo('floor')">바닥</button><br>
     <button class="nav-button" onclick="goTo('lobby')">나가기</button>
- </div>
+  </div>
   
     <!-- 로비:라운지:책꽂이 --> 
     <div id="bookshelf" class="hidden">
@@ -350,7 +349,7 @@
     <button onclick="goToWithSound('book2','zzapbook.mp3')">《궁금해요! 초세계급 A to Z》</button><br>
     <button onclick="goToWithSound('book1','zzapbook.mp3')">《초세계급 기록자 로렘의 유언》</button><br>
     <button class="nav-button" onclick="goTo('waitingspace')">나가기</button>
- </div>
+  </div>
 
     <!-- 로비:라운지:책1 --> 
     <div id="book1" class="hidden">
@@ -358,7 +357,7 @@
     검은 표지의 책.<br><br>
 …유언의 집행자는 섬에서 체류하며 하기의 항목을 이행한다.<br><br>1-1. 타 유언 집행자를 대상으로 한 의도적, 계획적 살해 및 증거의 은폐.<br><br>1-2. 전항으로 말미암아 발생한 살해 사건에 대한 조사.<br><br>……</p>
     <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
- </div>
+  </div>
 
       <!-- 로비:라운지:책2 --> 
     <div id="book2" class="hidden">
@@ -369,58 +368,11 @@
     <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
  </div>
 
-      <!-- 로비:라운지 --> 
-    <div id="floor" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[라운지]<br>[바닥]</span><br><br>
-    라운지를 걷다 보면 무언가 발에 채인다.<br>찢어진 종이 쓰레기 같다. 왜 바닥에 버려 둔 걸까...<br>조각난 채로 버려져 있어 내용은 알아보기 힘들다.</p>
-    <button onclick="goTo('evi13')">종이를 맞춰 본다</button><br>
-    <button class="nav-button" onclick="goTo('lobby')">나가기</button>
- </div>
 
-    <!-- 로비:라운지 --> 
-    <div id="floor" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[라운지]<br>[바닥]</span><br><br>
-    라운지를 걷다 보면 무언가 발에 채인다.<br>찢어진 종이 쓰레기 같다. 왜 바닥에 버려 둔 걸까...<br>조각난 채로 버려져 있어 내용은 알아보기 힘들다.</p>
-    <button onclick="goTo('evi13')">종이를 맞춰 본다</button><br>
-    <button class="nav-button" onclick="goTo('waitingspace')">나가기</button>
- </div>
-
-    <!-- 로비:라운지 --> 
-    <div id="evi13" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[라운지]<br>[바닥]</span><br><br>
-    어떻게든 맞춰 보면 일종의 쪽지처럼 보이기도 하는데...<br>알아보기 힘든 글자로 「…비밀… …공연장… 1시 30분…」 같은 단어가 쓰여 있다.</p>
-    <button id="gubtn" onclick="ev14('gubtn')">자세히 살펴본다</button><br>
-    <button id="gub15tn" onclick="ev15('gub15tn')">필체에 대해 생각해 본다</button><br>
-    <p id="evi14-result"></p>
-    <p id="evi15-result"></p>
-    <button class="nav-button" onclick="goTo('waitingspace')">나가기</button>
- </div>
-
-      <!-- 로비:라운지 --> 
-    <div id="evi14" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[라운지]<br>[바닥]</span><br><br>
-     「…리스 …비」 라는 글자까지는 맞춰 볼 수 있을 것 같다.</p>
-    <button class="nav-button" onclick="goTo('evi13')">나가기</button>
- </div>
-
-      <!-- 로비:라운지 --> 
-    <div id="evi15" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[라운지]<br>[바닥]</span><br><br>
-     일부러 평소에 쓰지 않는 손으로 작성하여 작성자가 특정되는 것을 피하려고 한 것으로 보인다.</p>
-    <button class="nav-button" onclick="goTo('evi13')">나가기</button>
- </div>
-
-  
-    <!-- 로비:엘리베이터 --> 
-    <div id="elevator" class="hidden">
-    <p><span style="font-weight: bold;">[엘리베이터]</span><br><br>유리로 되어 있어 내부가 전부 들여다보이는 엘리베이터.<br>이 건물은 엘리베이터 주변의 공간이 뻥 뚫린 구조로 설계되어 있다.<br>몇 층까지 있는지, 어떤 위험한 시설이 존재하는지조차 우리는 모른다...</p>
-    <button onclick="goTo('elevator1')">탑승한다</button><br>
-    <button class="nav-button" onclick="goTo('inside')">나가기</button>
- </div>      
   
       <!-- 로비:엘리베이터:탑승 --> 
-    <div id="elevator1" class="hidden">
-    <p><span style="font-weight: bold;">[엘리베이터]</span><br><br>원하는 층으로 이동할 수 있다.<br>3층 이상부터는 정비 중인지, 버튼을 눌러도 불이 들어오지 않는다.</p>
+    <div id="elevator" class="hidden">
+    <p><span style="font-weight: bold;">[엘리베이터]</span><br><br>1층부터 4층까지, 원하는 층으로 이동할 수 있다.</p>
     <button onclick="goToWithSound('3rdfloor','zzapelevator.mp3')">3층</button><br>
       <button onclick="goToWithSound('2ndfloor','zzapelevator.mp3')">2층</button><br>
         <button onclick="goToWithSound('inside','zzapelevator.mp3')">1층</button><br>
@@ -737,22 +689,21 @@
 
    <!-- 약품보관실 --> 
     <div id="medicine" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>어려운 이름의 약품들이 잔뜩 늘어서 있는 약품 보관실이다.<br>연구실 구석에 <span style="color: #3f40d3;">쓰레기통</span>이 놓여 있다.</p>
-    <button onclick="goTo('trash')">쓰레기통을 연다</button><br>
+    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>어려운 이름의 약품들이 <span style="color: #3f40d3;">선반</span>에 잔뜩 늘어서 있는 약품 보관실이다.<br>연구실 구석에 <span style="color: #3f40d3;">쓰레기통</span>이 놓여 있다.</p>
+    <button onclick="goTo('sunban')">선반을 확인한다</button><br>   
+    <button onclick="goTo('evi3')">쓰레기통을 연다</button><br>
     <button class="nav-button" onclick="goTo('lab')">나가기</button>
     </div>   
-
-     <!-- 쓰레기통 --> 
-    <div id="trash" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>이미 사용된 주사기와 바이알 약병이 의료폐기물 통에 버려져 있다.</p>
-    <button id="dirqudenlwu" onclick="ev12('dirqudenlwu')">약병을 확인한다</button><br>
-    <p id="evi12-result"></p>
+  
+       <!-- 선반 --> 
+    <div id="sunban" class="hidden">
+    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>선반이 조금 비어 있는 것 같은데... <br> 무엇이 사라진 거지?</p>
     <button class="nav-button" onclick="goTo('medicine')">나가기</button>
     </div>   
 
-      <!-- 쓰레기통 --> 
-    <div id="evi12" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>공연장 바닥에서 굴러다니던 것과 같은 약이다.</p>
+     <!-- 쓰레기통 --> 
+    <div id="evi3" class="hidden">
+    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>빈 약병이 버려져 있다.<br>약품 정보를 보니 안에 들어 있던 약은 '졸피뎀' 인 것 같다.</p>
     <button class="nav-button" onclick="goTo('medicine')">나가기</button>
     </div>   
       
