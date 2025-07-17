@@ -315,11 +315,20 @@
 
   <!-- 내부 1층 --> 
   <div id="inside" class="hidden">
-    <p><span style="font-weight: bold;">[건물 1층]</span><br><br>건물 1층.<br>정면에 방문객을 맞이하는 <span style="color: #202e70;">로비</span>가 보이고, 로비 뒤편에는 유리로 된 <span style="color: #202e70;">엘리베이터</span>가 배치되어 있다.</p>
+    <p><span style="font-weight: bold;">[건물 1층]</span><br><br>건물 1층.<br>정면에 방문객을 맞이하는 <span style="color: #202e70;">로비</span>가 보이고, 로비 뒤편에는 유리로 된 <span style="color: #202e70;">엘리베이터</span>가 배치되어 있다.<br><span style="color: #202e70;">레스토랑</span>으로 향하는 문이 조금 열려 있는 것 같다.</p>
     <button onclick="goTo('lobby')">로비</button>
-    <button onclick="goTo('elevator')">엘리베이터</button><br>
+    <button onclick="goTo('elevator')">엘리베이터</button>
+    <button onclick="goTo('evi1')">레스토랑</button><br>
     <button class="nav-button" onclick="goTo('starting-point')">건물 입구로 돌아가기</button>
   </div>
+
+
+  <!-- 레스토랑 --> 
+  <div id="evi1" class="hidden">
+    <p><span style="font-weight: bold;">[건물 1층]/[레스토랑]</span><br><br>열린 문을 통해 레스토랑 안으로 들어가 보면,<br>조리실의 선반에 씻은 물컵이 두 개 있는 것을 확인할 수 있다.</p>
+    <button class="nav-button" onclick="goTo('inside')">나가기</button>
+  </div>
+
 
     <!-- 로비 --> 
     <div id="lobby" class="hidden">
@@ -362,8 +371,8 @@
       <!-- 로비:라운지:책2 --> 
     <div id="book2" class="hidden">
     <p><span style="font-weight: bold;">[로비]/[라운지]<br>[책꽂이]</span><br><br>
-    푸른색 표지의 책. 새로 인쇄했는지 종이가 빳빳하다.<br><br>초세계급으로 선발된 인원들에 대한 소개 중에서 폴라리스의 이야기도 찾을 수 있다.<br><br>
-    1994년 출생.<br>2015년 밴드 '딥 블루' 결성.<br>2017년 첫 싱글 'BLUE STAR' 발매.<br>2019년 첫 투어 콘서트 개최.<br>2022년 초세계급 프론트맨으로 임명.<br><span style="font-weight: bold;">2025년 사망.</span>
+    푸른색 표지의 책. 새로 인쇄했는지 종이가 빳빳하다.<br><br>초세계급으로 선발된 인원들에 대한 소개 중에서 포멜하우트 에빌라와 세토 아이비의 이야기도 찾을 수 있다.<br><br>
+    포멜하우트 에빌라.<br>1994년 출생.<br>2018년 초세계급 프론트맨으로 임명.<br><span style="font-weight: bold;">2025년 사망.</span><br><br>세토 아이비.<br>1998년 출생.<br>2019년 초세계급으로 임명.<br>2025년 1월 국제 오케스트라 합주 경연 대회 대상 수상을 마지막으로 대회 출전을 중단...<br>그보다 더 아래쪽은 종이가 뜯겨나가 있어 읽을 수 없다.
 </p>
     <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
  </div>
@@ -384,7 +393,7 @@
     <p><span style="font-weight: bold;">[2층]</span><br><br>왼쪽 복도는 <span style="color: #202e70;">내빈용 객실</span>로, 오른쪽 복도는 <span style="color: #202e70;">회의실</span>로 이어진다. 1층으로 돌아갈 때는 엘리베이터를 이용하자.</p>
     <button onclick="goTo('elevator1')">엘리베이터</button><br>
     <button onclick="goTo('suite')">내빈용 객실</button>
-    <button onclick="goTo('office')">회의실</button><br>
+    <button onclick="goTo('evi15')">회의실</button><br>
  </div>     
   
     <!-- 내빈용 객실 --> 
@@ -405,45 +414,13 @@
  </div>
 
   
-    <!-- 폴라리스 방 --> 
-    <div id="polaris" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[폴라리스의 개인실]</span>
-    <br><br>모두에게 제공되는 것과 크게 다르지 않은 폴라리스의 방.<br>방을 둘러봐도 특별히 눈에 띄는 것은 없지만, 살펴봐서 나쁠 것은 없겠지...<br>정돈된 <span style="color: #202e70;">침대</span>가 보이고, 방 구석에는 <span style="color: #202e70;">기타 케이스</span>가 놓여 있다.</p>
-    <button onclick="goTo('bed')">침대</button><br>
-    <button onclick="goTo('guitarcase')">기타 케이스</button><br>
+    <!-- 세토 방 --> 
+    <div id="evi17" class="hidden">
+    <p><span style="font-weight: bold;">[내빈용 객실]/[세토의 개인실 방문]</span>
+    <br><br>잠겨 있어 열리지 않는다.<br>그런데 문 손잡이가 살짝 헐거워져 있다. 한 번에 열지 못하고 힘들게 연 것 같은 느낌인데...</p>
     <button class="nav-button" onclick="goTo('suite')">나가기</button>
   </div>
 
-      <!-- 폴라리스 방 --> 
-    <div id="bed" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[폴라리스의 개인실]</span>
-    <br><br>푹신한 침대에 베개와 이불이 단정하게 정리되어 있다.</p>
-    <button onclick="goTo('evi10')">살펴본다</button><br>
-    <button class="nav-button" onclick="goTo('polaris')">나가기</button>
-  </div>
-
-      <!-- 폴라리스 방 --> 
-    <div id="evi10" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[폴라리스의 개인실]</span>
-    <br><br>베개 밑에 메모지와 펜이 숨겨져 있다. 메모지는 한 장 뜯어 쓴 것 같다.</p>
-    <button class="nav-button" onclick="goTo('bed')">나가기</button>
-  </div>
-
-      <!-- 폴라리스 방 --> 
-    <div id="guitarcase" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[폴라리스의 개인실]</span>
-    <br><br>폴라리스의 베이스 기타가 들어 있던 케이스. 비어 있다.</p>
-    <button id="guitbtn" onclick="ev11('guitbtn')">자세히 살펴본다</button><br>
-    <p id="evi11-result"></p>
-    <button class="nav-button" onclick="goTo('polaris')">나가기</button>
-  </div>
-
-        <!-- 폴라리스 방 --> 
-    <div id="evi11" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[폴라리스의 개인실]</span>
-    <br><br>그러고 보니 안에 들어 있던 기타는 어디로 간 걸까... 적어도 현장 주변에서 발견되지는 않았다.</p>
-    <button class="nav-button" onclick="goTo('guitarcase')">나가기</button>
-  </div>
   
     <!-- 비품실 --> 
     <div id="bipum" class="hidden">
@@ -467,25 +444,24 @@
   </div>
   
     <!-- 회의실 --> 
-    <div id="office" class="hidden">
-    <p><span style="font-weight: bold;">[회의실]</span><br><br>세미나 등을 진행할 수 있는 회의실. 사무실의 역할도 겸하고 있다. 사무용 책상과 그 위의 <span style="color: #202e70;">컴퓨터</span>가 눈에 띈다.</p>
-    <button onclick="goTo('pcdesk')">사무용 책상</button><br>
+    <div id="evi15" class="hidden">
+    <p><span style="font-weight: bold;">[회의실]</span><br><br>세미나 등을 진행할 수 있는 회의실.<br>문을 열면 내부가 어수선하다. 한 차례 몸싸움이라도 있었던 것처럼...<br>회의실 <span style="color: #202e70;">문</span>과 <span style="color: #202e70;">책상</span>에 특이한 점이 있다.</p>
+    <button onclick="goTo('pcdesk')">문</button>
+    <button onclick="goTo('evi16')">바닥</button><br>
     <button class="nav-button" onclick="goTo('2ndfloor')">나가기</button>
   </div>
 
-    <!-- 회의실 : 사무용 책상 --> 
+    <!-- 회의실 : 문 --> 
     <div id="pcdesk" class="hidden">
-    <p><span style="font-weight: bold;">[회의실]/[사무용 책상]</span><br><br>책상 위에는 고급스러운 펜과 메모장이 놓여 있다.<br>책상 아래에는 서랍이 달려 있다.</p>
-    <button onclick="goTo('pcdesk1')">서랍을 연다</button><br>
-    <button class="nav-button" onclick="goTo('office')">나가기</button>
-  </div>
-  
-      <!-- 회의실 : 사무용 책상 : 서랍--> 
-    <div id="pcdesk1" class="hidden">
-    <p><span style="font-weight: bold;">[회의실]/[사무용 책상]</span><br><br>서랍 안에는 각종 비품과 더불어 구급상자가 하나 놓여 있다.<br>열어 보면 웬만한 응급처치는 가능할 정도로 다양한 용품이 들어 있다.<br>그러나 손댄 흔적도, 사라진 약품도 없다. 이 물건들이 쓸모를 다할 기회는 찾아오지 않았다.</p>
+    <p><span style="font-weight: bold;">[회의실]/[문]</span><br><br>문 근처 바닥에 핏자국이 남아 있다.</p>
     <button class="nav-button" onclick="goTo('office')">나가기</button>
   </div>
 
+      <!-- 회의실 : 책상 --> 
+    <div id="evi16" class="hidden">
+    <p><span style="font-weight: bold;">[회의실]/[책상]</span><br><br>세토 아이비가 이 근처에 쓰러져 있었지...<br>모서리에 무언가가 세게 부딪힌 흔적이 있고, 책상 아래 바닥과 모서리에 소량의 혈흔이 남아 있다.</p>
+    <button class="nav-button" onclick="goTo('office')">나가기</button>
+  </div>
   
     <!-- 3층 --> 
     <div id="3rdfloor" class="hidden">
@@ -501,23 +477,8 @@
 
     <!-- 음악실 --> 
     <div id="music" class="hidden">
-    <p><span style="font-weight: bold;">[음악실]</span><br><br>다양한 악기와 음반을 모아 둔 음악실. 녹음실과 <span style="color: #3f40d3;">CD 감상 부스</span>가 설치되어 있다.<br>또, <span style="color: #3f40d3;">악기 보관실</span>이라고 쓰인 작은 문이 구석에 배치된 것이 보인다.</p>
-    <button onclick="goTo('cd')">CD 감상 부스</button>
-    <button onclick="goTo('inst')">악기 보관실</button><br>
+    <p><span style="font-weight: bold;">[음악실]</span><br><br>늘어선 음반이 그림자를 드리우는 음악실. 지금은 볼 만한 것이 없다.</p>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
-  </div>
-
-      <!-- CD부스 --> 
-    <div id="cd" class="hidden">
-    <p><span style="font-weight: bold;">[음악실]/[CD 감상 부스]</span><br><br>벽 한켠에 CD를 모아 놓은 <span style="color: #3f40d3;">장식장</span>이 보인다.</p>
-    <button onclick="goTo('cdlist')">장식장</button><br>
-    <button class="nav-button" onclick="goTo('music')">나가기</button>
-  </div>
-
-    <!-- CD부스 --> 
-    <div id="cdlist" class="hidden">
-    <p><span style="font-weight: bold;">[음악실]/[CD 감상 부스]</span><br><br>밴드 '딥 블루'의 CD가 쓰러져 있다. 우연이겠지…</p>
-    <button class="nav-button" onclick="goTo('cd')">나가기</button>
   </div>
 
       <!-- 악기 보관실 --> 
@@ -540,17 +501,8 @@
 
       <!-- 공연장 --> 
     <div id="stage" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]</span><br><br>원형 극장의 형태를 빌려온 공연장.<br>중앙의 <span style="color: #3f40d3;">무대</span> 말고도 조명 관리실, 분장실과 촬영 부스가 있지만, 공연할 사람이 없다면 무용지물이다.</p>
-    <button onclick="goTo('mudae')">무대</button><br>
+    <p><span style="font-weight: bold;">[공연장]</span><br><br>원형 극장의 형태를 빌려온 공연장은 텅 비어 있고,. 조명이 꺼져 어두컴컴하다.</p>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
-  </div>
-
-      <!-- 공연장 --> 
-    <div id="mudae" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]/[무대]</span><br><br>조명이 전부 꺼져 있어 어두컴컴한 무대. 안쪽으로 시체의 모습이 보인다.</p>
-    <button onclick="goTo('polasiche')">폴라리스 래피드의 시체를 확인한다</button><br>
-    <button onclick="goTo('around')">시체의 주변을 확인한다</button><br>
-    <button class="nav-button" onclick="goTo('stage')">나가기</button>
   </div>
   
       <!-- !!폴라리스 시체 --> 
@@ -705,16 +657,143 @@
   
        <!-- 선반 --> 
     <div id="sunban" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>선반이 조금 비어 있는 것 같은데... <br> 무엇이 사라진 거지?</p>
-    <button class="nav-button" onclick="goTo('medicine')">나가기</button>
+    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>선반이 조금 비어 있는 것 같은데... <br> 무엇이 사라진 거지?<br><br>선반 아래쪽에는 알코올 램프가 놓여 있다. 원래 이 자리에 있었던가?</p>
+    <button onclick="goTo('evi4')">알코올 램프를 확인한다</button><br>   
+      <button class="nav-button" onclick="goTo('medicine')">나가기</button>
     </div>   
 
+         <!-- 선반 --> 
+    <div id="evi4" class="hidden">
+    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>누군가가 이미 사용한 것인지, 램프의 심지가 줄어들어 있고 살짝 탄 냄새도 풍긴다.</p>
+      <button class="nav-button" onclick="goTo('sunban')">나가기</button>
+    </div>   
+
+  
      <!-- 쓰레기통 --> 
     <div id="evi3" class="hidden">
     <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>빈 약병이 버려져 있다.<br>약품 정보를 보니 안에 들어 있던 약은 '졸피뎀' 인 것 같다.</p>
     <button class="nav-button" onclick="goTo('medicine')">나가기</button>
     </div>   
-      
+
+        <!-- 4층 --> 
+    <div id="4thfloor" class="hidden">
+    <p><span style="font-weight: bold;">[4층]</span><br><br>공증인이 '리프레시 존' 이라고 불렀던 4층.<br>엘리베이터에서 내리자마자 눈에 들어오는 것은 대형 <span style="color: #3f40d3;">트레이닝 룸</span>이다.<br>복도를 왼쪽으로 돌면 <span style="color: #3f40d3;">카페</span>가 있고, 오른쪽으로 돌면 <span style="color: #3f40d3;">스파</span>라고 적힌 방이 나온다.<br>그리고 엘리베이터 뒤편까지 한 바퀴를 빙 돌면... <span style="color: #3f40d3;">문패에 아무것도 쓰여 있지 않은 방</span>이 나타난다.</p>
+    <button onclick="goTo('elevator')">엘리베이터</button><br>
+    <button onclick="goTo('training')">트레이닝 룸</button>
+    <button onclick="goTo('cafe')">카페</button>
+    <button onclick="goTo('spa')">스파</button><br>
+    <button onclick="goTo('strange')">정체불명의 방</button>
+ </div>  
+
+   <!-- 트레이닝룸 --> 
+<div id="training" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]</span><br><br>다양한 <span style="color: #3f40d3;">운동기구</span>가 놓인 트레이닝 룸.<br>한쪽에는 <span style="color: #3f40d3;">샤워실</span>도 배치되어 있다.<br><br>지금은 트레이닝 룸 전체가 정전된 상태다.<br>공증인이 비상용 조명을 가동시켜 주었지만 평소의 조명보다는 밝기가 덜하다.<br>트레이닝 룸의 <span style="color: #3f40d3;">벽면</span>도 조금 신경쓰이는데...</p>
+    <button onclick="goTo('evi12')">운동기구</button>
+    <button onclick="goTo('shower')">샤워실</button>
+    <button onclick="goTo('beokmyeon')">벽면</button><br>
+    <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
+ </div> 
+
+   <!-- 운동기구 --> 
+<div id="evi12" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[운동기구]</span><br><br>
+운동기구들이 원래 위치해 있던 자리보다 어긋나 비틀어져 있다.<br>누군가 부딪히기라도 한 걸까...<br><br>자세 교정용의 <span style="color: #3f40d3;">거울</span>에 무언가 묻어 있다.</p>
+      <button onclick="goTo('evi13')">거울</button><br>
+    <button class="nav-button" onclick="goTo('training')">나가기</button>
+ </div> 
+  
+   <!-- 운동기구 --> 
+<div id="evi13" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[운동기구]</span><br><br>
+거울에는 누군가의 손자국이 나 있다.</p>
+   <button id="dpgb" onclick="ev14('dpgb')">자세히 본다</button><br>
+     <button id="tkffu" onclick="ev45('tkffu')">생각해 본다</button><br>
+      <p id="evi14-result"></p>
+    <p id="evi45-result"></p>
+    <button class="nav-button" onclick="goTo('training')">나가기</button>
+ </div> 
+
+   <!-- 운동기구 --> 
+<div id="evi14" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[운동기구]</span><br><br>
+눌린 흔적으로 보아 벽을 짚으며 조금씩 걸어간 듯하다.</p>
+    <button class="nav-button" onclick="goTo('evi13')">나가기</button>
+ </div> 
+
+     <!-- 운동기구 --> 
+<div id="evi45" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[운동기구]</span><br><br>
+자국이 눌린 위치와 각도로 추측했을 때, 신장이 꽤 큰 사람이 아닐까?</p>
+    <button class="nav-button" onclick="goTo('evi13')">나가기</button>
+ </div> 
+  
+   <!-- 벽면 --> 
+<div id="beokmyeon" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
+<span style="color: #3f40d3;">스위치 커버</span>와 <span style="color: #3f40d3;">콘센트</span>가 벽에 부착되어 있다.<br>벽면을 둘러보다 보니 <span style="color: #3f40d3;">입구 근처</span>에도 눈이 간다.</p>
+    <button onclick="goTo('switch')">스위치 커버</button>
+    <button onclick="goTo('consent')">콘센트</button>
+    <button onclick="goTo('dlqrnrmscj')">입구 근처</button>
+    <button class="nav-button" onclick="goTo('training')">나가기</button>
+ </div> 
+
+   <!-- 스위치 --> 
+<div id="switch" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
+커버 아래에 있는 것은 트레이닝 룸 전체의 전기를 공급하거나 차단시킬 수 있는 스위치다.</p>
+    <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
+ </div> 
+
+   <!-- 콘센트 --> 
+<div id="switch" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
+트레이닝 룸 구석의 콘센트 플러그. 플러그에 꽂힌 전선이 샤워실까지 이어지고 있다.</p>
+    <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
+ </div> 
+
+   <!-- 입구 근처 --> 
+<div id="switch" class="hidden">
+<p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
+입구 근처의 구석에 대걸레가 놓여 있다. 살짝 젖어 있는 걸 보면 최근에 사용된 걸까?</p>
+    <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
+ </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   <!-- 감시카메라룸 --> 
+<div id="strange" class="hidden">
+<p><span style="font-weight: bold;">[정체불명의 방]</span><br><br>
+잠겨 있다.</p>
+    <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
+ </div> 
+
+    <!-- 카페 --> 
+    <div id="cafe" class="hidden">
+    <p><span style="font-weight: bold;">[카페]</span><br><br>
+차분한 노래가 흘러나오던 카페 안은 조용하다.<br>지금은 여기 있을 때가 아니다.</p>
+    <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
+    </div>  
+
+  <!-- 스파 --> 
+<div id="spa" class="hidden">
+<p><span style="font-weight: bold;">[스파]</span><br><br>특별한 점이 있는 것 같지는 않다. 지금 피로를 푸는 것은 무용한 일이다.</p>
+    <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
+ </div> 
+
+  
 <!-- !!!!여기서부터 스크립트!!!! -->
   <script>
   // 애니메이션이 끝난 뒤 hover 작동 허용
@@ -1076,9 +1155,13 @@ function goTo(page) {
       if (['evi15'].includes(page)) {
     currentUser.evid15 = true;
   }
-    if (['qkekr'].includes(page)) {
-    currentUser.med = true;
+        if (['evi16'].includes(page)) {
+    currentUser.evid16 = true;
   }
+      if (['evi17'].includes(page)) {
+    currentUser.evid17 = true;
+  }
+
     if (page === 'starting-point') {
     document.getElementById('persistent-nav').style.display = 'flex';
   }}
@@ -1185,6 +1268,23 @@ function ev2(buttonId) {
     result.innerText = "열심히 생각해 봤지만 무엇이 사라졌는지 잘 모르겠다.";
   }
 }
+function ev14(buttonId) {
+  if (currentUser.OBS >= 5) {
+    goTo('evi14');
+  } else {
+    const result = document.getElementById('evi14-result');
+    result.innerText = "이 각도에서는 잘 보이지 않는 것 같다.";
+  }
+}
+function ev45(buttonId) {
+  if (currentUser.OBS >= 5 && currentUser.INT >= 4) {
+    goTo('evi45');
+  } else {
+    const result = document.getElementById('evi45-result');
+    result.innerText = "생각해 봐도 떠오르는 것이 없다.";
+  }
+}
+    
 //여기는 전에 쓰던 함수 (포맷 참고용으로 남겨둠, 나중에 지울 것)
 function ev5(buttonId) {
   if (currentUser.POW >= 3) {
@@ -1264,9 +1364,9 @@ function ev15(buttonId) {
 //★★★★★퀴즈★★★★★
 function checkSecretCode() {
   const input = document.getElementById('secret-code-input').value;
-  if (input === "폴라리스 래피드") { // 원하는 정답
+  if (input === "세토 아이비") { // 원하는 정답
     const codebox = document.getElementById('codebox');
-    goTo('polaris');
+    goTo('evi17');
   } else {
     const result = document.getElementById('secret-code-result');
     result.innerText = "잠겨 있는 방이다.";
