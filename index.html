@@ -372,7 +372,7 @@
     <div id="book2" class="hidden">
     <p><span style="font-weight: bold;">[로비]/[라운지]<br>[책꽂이]</span><br><br>
     푸른색 표지의 책. 새로 인쇄했는지 종이가 빳빳하다.<br><br>초세계급으로 선발된 인원들에 대한 소개 중에서 포멜하우트 에빌라와 세토 아이비의 이야기도 찾을 수 있다.<br><br>
-    포멜하우트 에빌라.<br>1994년 출생.<br>2018년 초세계급 프론트맨으로 임명.<br><span style="font-weight: bold;">2025년 사망.</span><br><br>세토 아이비.<br>1998년 출생.<br>2019년 초세계급으로 임명.<br>2025년 1월 국제 오케스트라 합주 경연 대회 대상 수상을 마지막으로 대회 출전을 중단...<br>그보다 더 아래쪽은 종이가 뜯겨나가 있어 읽을 수 없다.
+    포멜하우트 에빌라.<br>1994년 출생.<br>2018년 초세계급 탐험가로 임명.<br><span style="font-weight: bold;">2025년 사망.</span><br><br>세토 아이비.<br>1998년 출생.<br>2019년 초세계급 피아니스트로 임명.<br>2025년 1월 국제 오케스트라 합주 경연 대회 대상 수상을 마지막으로 대회 출전을 중단...<br>그보다 더 아래쪽은 종이가 뜯겨나가 있어 읽을 수 없다.
 </p>
     <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
  </div>
@@ -512,7 +512,7 @@
     포멜하우트의 시체.<br>상반신, 손, 무릎... 피부 전체적으로 화상 자국이 있다. </p>
     <button onclick="goTo('face')">얼굴을 살펴본다</button><br>
     <button onclick="goTo('evi6')">손과 발을 살펴본다</button><br>
-    <button onclick="goTo('clo')">옷을 살펴본다</button><br>
+    <button onclick="goTo('evi9')">옷을 살펴본다</button><br>
     <button class="nav-button" onclick="goTo('mudae')">나가기</button>
   </div>
 
@@ -520,7 +520,7 @@
     <div id="face" class="hidden">
     <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
     두 눈은 감기지 않은 채다. 입은 테이프로 막혀 있다.</p>
-   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
+   <button class="nav-button" onclick="goTo('evi5')">나가기</button>
   </div>
 
       <!-- !!폴라리스 시체 --> 
@@ -532,7 +532,7 @@
   <button id="thswkrnr" onclick="ev8('thswkrnr')">밧줄을 살펴본다</button><br>
     <p id="evi7-result"></p>
     <p id="evi8-result"></p>
-   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
+   <button class="nav-button" onclick="goTo('evi5')">나가기</button>
   </div>
 
         <!-- !!폴라리스 시체 --> 
@@ -553,7 +553,7 @@
     <div id="evi9" class="hidden">
     <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
 옷가지가 피부에 붙어 녹아 있고, 상반신의 심장 부근은 검게 그을려 있다.</p>
-   <button class="nav-button" onclick="goTo('evi6')">나가기</button>
+   <button class="nav-button" onclick="goTo('evi5')">나가기</button>
   </div>
   
  
@@ -580,7 +580,7 @@
   
        <!-- 선반 --> 
     <div id="sunban" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>선반이 조금 비어 있는 것 같은데... <br> 무엇이 사라진 거지?<br><br>선반 아래쪽에는 알코올 램프가 놓여 있다. 원래 이 자리에 있었던가?</p>
+    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>선반이 조금 비어 있는 것 같은데... <br> 무엇이 사라진 거지?<br><br>선반 아래쪽에는 <span style="color: #3f40d3;">알코올 램프</span>가 놓여 있다. 원래 이 자리에 있었던가?</p>
     <button onclick="goTo('evi4')">알코올 램프를 확인한다</button><br>   
       <button class="nav-button" onclick="goTo('medicine')">나가기</button>
     </div>   
@@ -656,7 +656,7 @@
 <span style="color: #3f40d3;">스위치 커버</span>와 <span style="color: #3f40d3;">콘센트</span>가 벽에 부착되어 있다.<br>벽면을 둘러보다 보니 <span style="color: #3f40d3;">입구 근처</span>에도 눈이 간다.</p>
     <button onclick="goTo('switch')">스위치 커버</button>
     <button onclick="goTo('consent')">콘센트</button>
-    <button onclick="goTo('dlqrnrmscj')">입구 근처</button>
+    <button onclick="goTo('dlqrnrmscj')">입구 근처</button><br>
     <button class="nav-button" onclick="goTo('training')">나가기</button>
  </div> 
 
@@ -668,14 +668,14 @@
  </div> 
 
    <!-- 콘센트 --> 
-<div id="switch" class="hidden">
+<div id="consent" class="hidden">
 <p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
 트레이닝 룸 구석의 콘센트 플러그. 플러그에 꽂힌 전선이 샤워실까지 이어지고 있다.</p>
     <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
  </div> 
 
    <!-- 입구 근처 --> 
-<div id="switch" class="hidden">
+<div id="dlqrnrmscj" class="hidden">
 <p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
 입구 근처의 구석에 대걸레가 놓여 있다. 살짝 젖어 있는 걸 보면 최근에 사용된 걸까?</p>
     <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
@@ -712,7 +712,7 @@
    <!-- 샤워부스 --> 
 <div id="evi11" class="hidden">
 <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[샤워 부스]</span><br><br>
-피복이 벗겨진 채 손상된 전선이 바닥에 늘어져 있다.</p>
+피복이 벗겨진 채 손상된 전선이 <span style="color: #3f40d3;">바닥</span>에 늘어져 있다.</p>
 <button class="nav-button" onclick="goTo('shower3')">나가기</button>
  </div> 
   
