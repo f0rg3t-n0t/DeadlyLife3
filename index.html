@@ -454,7 +454,15 @@
   
       <!-- 비품실 : 도구함 --> 
     <div id="ehrngka" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[비품실]</span><br><br>도구함의 뚜껑을 들어올리면, 그 안에는 톱, 전동 가위, 도끼 같은 물건들이 가지런히 들어 있다.<br><br>무언가 사라진 것 같지는 않다. 아무도 건드리지 않은 모양이다. 그렇다면 흉기는 어디서 가져온 걸까...</p>
+    <p><span style="font-weight: bold;">[내빈용 객실]/[비품실]</span><br><br>전에 확인했을 때와 비교하면 도구함이 조금 빈 것 같은데...<br>기분 탓인가?</p>
+    <button id="mvfds" onclick="ev2('mvfds')">잘 생각해 본다</button><br>
+    <p id="evi2-result"></p>
+    <button class="nav-button" onclick="goTo('bipum')">나가기</button>
+  </div>
+
+        <!-- 비품실 : 도구함 --> 
+    <div id="evi2" class="hidden">
+    <p><span style="font-weight: bold;">[내빈용 객실]/[비품실]</span><br><br>밧줄과 테이프가 사라져 있다.</p>
     <button class="nav-button" onclick="goTo('bipum')">나가기</button>
   </div>
   
@@ -567,7 +575,7 @@
   </div>
 
       <!-- !!폴라리스 시체 --> 
-    <div id="evi2" class="hidden">
+    <div id="evif" class="hidden">
     <p><span style="font-weight: bold;">[공연장]<br>[폴라리스의 시체]</span><br><br>
     꼼꼼히 살펴본 결과 가슴과 머리의 상처를 제외한 다른 상처는 전혀 없는 것 같다.</p>
    <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
@@ -1170,14 +1178,14 @@ function goBack() {
 
 //여기서부터 특정 장소에서 사용하도록 되어 있는 함수!!!!
 function ev2(buttonId) {
-  if (currentUser.OBS >= 5) {
+  if (currentUser.INT >= 3) {
     goTo('evi2');
   } else {
     const result = document.getElementById('evi2-result');
-    result.innerText = "자세히 살펴봤지만 더 떠오르는 것은 없다.";
+    result.innerText = "열심히 생각해 봤지만 무엇이 사라졌는지 잘 모르겠다.";
   }
 }
-
+//여기는 전에 쓰던 함수 (포맷 참고용으로 남겨둠, 나중에 지울 것)
 function ev5(buttonId) {
   if (currentUser.POW >= 3) {
     goTo('evi5');
